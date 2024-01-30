@@ -1,0 +1,97 @@
+
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+::selection{
+  background: transparent;
+}
+
+/* 
+
+1
+p {
+  animation: fade ease ;
+  animation-timeline: view();
+}
+@keyframes fade {
+  from{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+2
+.top {
+  height: 10px;
+  position: fixed;
+  top: 0;
+  background: teal;
+  width: 100%;
+  scale:  0 1;
+  animation: expand linear ;
+  animation-timeline: scroll();
+}
+
+
+@keyframes expand {
+  to {
+    scale: 1 1 ;
+  }
+} */
+
+
+
+
+
+
+
+img {
+  opacity: 0;
+  scale: .7;
+
+  animation: fade linear forwards;
+  animation-timeline: view();
+animation-range: cover;
+  
+  /*u can add an offset to the img  like this
+   animation-range: contain 100px ;  some times u should ad forwards
+  */
+ 
+          /*cover/contain*/
+  /*
+  cover     as soon as the image shows for a little
+  contain   wait till the img  is completlty on the viewport
+  entry     start as soon it enters the viewpot and dens as soon as it is leaving the viewport
+  exist     works when the item is exiting the page
+  */
+}
+
+@keyframes fade {
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+
+/*
+use animation timeline : scrol(root) to look at the window scrollbar not the e scrollbar
+*/
